@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#c2c5c2;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+}
+#card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card{
+    margin:1rem;
+    border-bottom:1px solid #E9E8E9;
+    border-radius: 0.3rem;
+    background-color: #fefefe;
+}
+
+.card-basic{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-img-top{
+    height:196px;
+    width: 100%;
+    grid-area: img;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-title{
+    grid-area:title;
+}
+
+.card-subtitle{
+    grid-area:subtitle;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 1.5rem;
+}
+
+.card-text{
+    grid-area:ctext;
+    font-size:0.9rem;
+    color: rgba(0, 0, 0, 0.54);
+    line-height: 1.2rem;
+}
+
+.card-btn-1 {
+    grid-area:read;
+    font-weight: bold;
+    text-decoration: none;
+    color:#9501EE;
+}
+
+.card-btn-2 {
+    grid-area:book;
+    font-weight: bold;
+    text-decoration: none;
+    color:#9501EE;
+}
+
+.card-icon-1 {
+    grid-area:fav;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.card-icon-2 {
+    grid-area:share;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.card-icon-3 {
+    grid-area:more;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.card-body{
+    padding:10px;
+    border-left:1px solid #E9E8E9;
+    border-right:1px solid #E9E8E9;
+}
+
+
+.card-actions {
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+
+.card-icons{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+
+.card-only-buttons{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book . . .";
+}
+.card-only-icons{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    ". . fav share more";
+}
+
+.card-only-icons .card-btn-1,.card-only-icons .card-btn-2{
+    color: transparent;
+    pointer-events: none;
+    cursor: default;
+    z-index: -9;
+}
+
+.card-only-buttons .card-icon-1,.card-only-buttons .card-icon-2,.card-only-buttons .card-icon-3{
+    color: transparent;
+    pointer-events: none;
+    cursor: default;
+    z-index: -9;
+}
+
+.card-text-over-image{
+    height: 340px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    ". . fav share more";
+}
+.card-text-over-image .card-body{
+    position: relative;
+}
+
+.card-text-over-image .card-title{
+    position: absolute;
+    bottom:150px;
+    color: #fefefe;
+}
+
+.card-text-over-image .card-subtitle{
+    position: absolute;
+    bottom: 110px;
+    color: #fefefe;
+}
+
+.card-with-header{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "img img img img img"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-with-header .card-text{
+    position: relative;
+    bottom: -210px;
+}
+
+.card-with-header .card-actions{
+    position: relative;
+    bottom: -240px;
+}
+
+.card-with-header .card-img-top{
+    position: relative;
+    top: -100px;
+    border-radius: 0;
+}
+
+.card-horizontal-image-text{
+    height: 170px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-horizontal-image-text .card-text{
+    display: none;
+}
+ 
+.card-horizontal-image-text .card-img-top{
+    height:100px;
+    width:110px;
+} 
+
+.card-horizontal-image-text .card-body{
+    border-style: none;
+    position: relative;
+    top:-82px;
+}
+
+.card-horizontal-image-text .card-title,.card-horizontal-image-text .card-subtitle{
+    position: relative;
+    left:120px;
+    top:-10px;
+}
+
