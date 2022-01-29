@@ -13,6 +13,8 @@
     align-items: center;
     padding: 1rem;
     background-color: #FFFEFF;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .success{
@@ -70,4 +72,16 @@
 .outline-warning{
     color: #db7e03;
     border: 1px solid #db7e03;
+}
+
+.alert .close {
+    position: absolute;
+    right: 10px;
+    font-size: 1.6rem;
+    color:#817462;
+    cursor: pointer;
+}
+
+.alert .close:hover{
+    color:rgb(37, 37, 37);
 }
