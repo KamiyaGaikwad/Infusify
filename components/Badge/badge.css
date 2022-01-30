@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.badge-container{
+    width:100%;
+    height:min-content;
+    border:2px solid #DDDDDC;
+    background-color: #F5F6F8;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    gap:25px;
+}
+
+.avatar-sm{
+    border-radius: 50%;
+    height:1.5rem;
+}
+
+.avatar-md{
+    border-radius: 50%;
+    height:2.5rem;
+}
+
+.avatar-lg{
+    border-radius: 50%;
+    height:3.5rem;
+}
+
+.avatar-square{
+    border-radius: 0.3rem;
+}
+
+.badge{
+    position: relative;
+}
+
+.badge-avatar-lg{
+    border-radius: 50%;
+    height:1.2rem;
+    width:1.2rem;
+    position: absolute;
+    top:38px;
+    left:38px;
+    border:2px solid white;
+}
+
+.status-online{
+    background-color: green;
+}
+
+.status-offline{
+    background-color: red;
+}
+
+.status-busy{
+    background-color: rgb(255, 255, 0);
+}
+
+.badge-avatar-md{
+    border-radius: 50%;
+    height:0.8rem;
+    width:0.8rem;
+    position: absolute;
+    top:28px;
+    left:28px;
+    border:2px solid white;
+}
+
+.badge-avatar-sm{
+    border-radius: 50%;
+    height:0.6rem;
+    width:0.6rem;
+    position: absolute;
+    top: 16px;
+    left:16px;
+    border:1px solid white;
+}
+
+.badge i{
+    font-size: 2rem;
+}
+
+.badge-icon{
+    border-radius: 50%;
+    background-color: rgb(97, 20, 97);
+    color: thistle;
+    width: 1.2rem;
+    height:1.2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    position: absolute;
+    top:-8px;
+    right:-8px;
+}
