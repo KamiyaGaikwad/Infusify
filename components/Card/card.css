@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --dark-red:#dc3545;
+    --dark-blue:#1e74b9;
+    --white:#fefefe;
+    --dark-orange:#db7e03;
+    --dark-green:#29A744;
+    --container-border-white:#DDDDDC;
+    --container-background-white:#F5F6F8;
+    --violet:rgb(97, 20, 97);
+    --light-pink:#d8bfd8;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -249,3 +262,25 @@ body{
     top:-10px;
 }
 
+.card-badge{
+    position: relative;
+}
+.card-badge .badge{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.badge{
+    position: relative;
+}
+
+.status-online{
+    background-color: var(--dark-green);
+}
+
+.badge-sq{
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    color:var(--white);
+}
