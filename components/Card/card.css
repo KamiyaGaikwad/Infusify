@@ -266,7 +266,7 @@
     top:-10px;
 }
 
-.card-badge{
+.card-badge,.card-dismiss{
     position: relative;
 }
 .card-badge .badge{
@@ -287,4 +287,12 @@
     padding: 0.3rem;
     border-radius: 0.3rem;
     color:var(--white);
+}
+
+.card-dismiss .card-close-icon{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 1.7rem;
+    cursor:pointer;
 }
