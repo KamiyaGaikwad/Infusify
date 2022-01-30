@@ -10,28 +10,32 @@
     --container-background-white:#F5F6F8;
     --violet:rgb(97, 20, 97);
     --light-pink:#d8bfd8;
+    --card-body-border-white:#E9E8E9;
+    --card-icon-black:rgba(0, 0, 0, 0.54);
+    --card-purple:#9501EE;
+    --background-gray:#c2c5c2;
+    --font-family:'Roboto', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color:#c2c5c2;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
+    font-family: var(--font-family);
 }
+
 #card{
+    background-color:var(--background-gray);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 .card{
     margin:1rem;
-    border-bottom:1px solid #E9E8E9;
+    border-bottom:1px solid var(--card-body-border-white);
     border-radius: 0.3rem;
-    background-color: #fefefe;
+    background-color: var(--white);
 }
 
 .card-basic{
@@ -60,14 +64,14 @@ body{
 .card-subtitle{
     grid-area:subtitle;
     margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--card-icon-black);
     line-height: 1.5rem;
 }
 
 .card-text{
     grid-area:ctext;
     font-size:0.9rem;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--card-icon-black);
     line-height: 1.2rem;
 }
 
@@ -75,38 +79,38 @@ body{
     grid-area:read;
     font-weight: bold;
     text-decoration: none;
-    color:#9501EE;
+    color:var(--card-purple);
 }
 
 .card-btn-2 {
     grid-area:book;
     font-weight: bold;
     text-decoration: none;
-    color:#9501EE;
+    color:var(--card-purple);
 }
 
 .card-icon-1 {
     grid-area:fav;
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--card-icon-black);
 }
 
 .card-icon-2 {
     grid-area:share;
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--card-icon-black);
 }
 
 .card-icon-3 {
     grid-area:more;
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, 0.54);
+    color: var(--card-icon-black);
 }
 
 .card-body{
     padding:10px;
-    border-left:1px solid #E9E8E9;
-    border-right:1px solid #E9E8E9;
+    border-left:1px solid var(--card-body-border-white);
+    border-right:1px solid var(--card-body-border-white);
 }
 
 
@@ -190,13 +194,13 @@ body{
 .card-text-over-image .card-title{
     position: absolute;
     bottom:150px;
-    color: #fefefe;
+    color: var(--white);
 }
 
 .card-text-over-image .card-subtitle{
     position: absolute;
     bottom: 110px;
-    color: #fefefe;
+    color: var(--white);
 }
 
 .card-with-header{
