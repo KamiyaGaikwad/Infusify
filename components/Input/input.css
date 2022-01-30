@@ -1,0 +1,116 @@
+:root{
+    --dark-red:#dc3545;
+    --dark-blue:#1e74b9;
+    --white:#fefefe;
+    --dark-orange:#db7e03;
+    --dark-green:#29A744;
+    --container-border-white:#DDDDDC;
+    --container-background-white:#F5F6F8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    gap:5px;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+input{
+    padding: 0.2rem;
+}
+
+.input-container{
+    width:100%;
+    height:min-content;
+    border:2px solid var(--container-border-white);
+    background-color: var(--container-background-white);
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
+.input-group .btn {
+    position: absolute;
+    top:27px;
+    right:-26px;
+    padding:7px;
+    height:29px;
+    width: 31px;
+}
+
+.btn{
+    height:min-content;
+    width: min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    color:var(--white);
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover{
+    opacity: 0.7;
+}
+
+.btn-primary{
+    background-color: var(--dark-blue);
+}
+
+.txt-input{
+    width:18rem;
+    height: 8rem;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.error-input{
+    border: 1px solid var(--dark-red);
+}
+
+.error-label{
+    color:var(--dark-red);
+}
+
+.warning-input{
+    border: 1px solid var(--dark-orange);
+}
+
+.warning-label{
+    color:var(--dark-orange);
+}
+
+.success-input{
+    border: 1px solid var(--dark-green);
+}
+
+.success-label{
+    color:var(--dark-green);
+}
+
+.radio-container{
+    display: flex;
+    gap:15px;
+}
+
+.radio{
+    cursor: pointer;
+}
+
+.error-show{
+    color:var(--dark-red);
+}
