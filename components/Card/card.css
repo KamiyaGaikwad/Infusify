@@ -296,3 +296,13 @@
     font-size: 1.7rem;
     cursor:pointer;
 }
+
+.card-text-only .card-img-top {
+    display: none;
+}
+
+.card-text-only{
+    height: 180px;
+    width:340px;
+    padding-top: 5px;
+}
