@@ -146,4 +146,13 @@
 .btn-float{
     border-radius: 50%;
     padding: 1.2rem;
+    position: fixed;
+    z-index:3;
+}   
+
+.btn-float-not{
+    border-radius: 50%;
+    padding: 1.2rem;
+    position:static;
+    z-index:1;
 }
