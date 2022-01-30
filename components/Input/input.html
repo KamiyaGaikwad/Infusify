@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="input.css">
+    <title>Infusify | Docs | Input</title>
+</head>
+<body>
+    <div class="input-container">
+    <div class="input-group">
+        <label>Email-Id*</label>
+        <input type="text" type="email" required />
+    </div>
+    <div class="input-group">
+        <label>Password*</label>
+        <input class="pwd" type="password" required /><button class="btn btn-primary"><i class="fas fa-eye"></i></button>
+    </div>
+    </div>
+    <div class="input-container">
+        <textarea class="txt-input" placeholder="Write Text here in Text Area"></textarea>
+    </div>
+    <div class="input-container">
+        <div class="input-group">
+        <div class="error-label">Error input</div>
+        <input type="text" class="error-input" />
+    </div>
+
+    <div class="input-group">
+        <div class="warning-label">Warning input</div>
+        <input type="text" class="warning-input" />
+    </div>
+
+    <div class="input-group">
+        <div class="success-label">Success input</div>
+        <input type="text" class="success-input" />
+    </div>
+    </div>
+    <div class="input-container">
+        <div class="radio-container">
+        <div class="radio-group">
+            <input type="radio" class="radio" id="chrome" name="radio-btn" />
+            <label for="chrome">Google Chrome</label></div>
+            <div class="radio-group">
+            <input type="radio" class="radio" id="brave" name="radio-btn" checked />
+            <label for="brave">Brave Browser</label></div>
+            <div class="radio-group">
+            <input type="radio" class="radio" id="firefox" name="radio-btn" />
+            <label for="firefox">Firefox</label></div>
+        </div>
+    </div>
+    <div class="input-container">
+        <div class="input-group">
+            <label>Password*</label>
+            <input class="pwd check error-input" type="password">
+            <div class="error-show">Password should atleast have 8 characters</div>
+        </div>
+    </div>
+    <script src="input.js"></script>
+</body>
+</html>
