@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn{
+    height:min-content;
+    width:min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    color:#fefefe;
+    background-color: #fefefe;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.btn-success:hover,.btn-primary:hover,.btn-warning:hover,.btn-error:hover{
+    opacity: 0.7;
+}
+
+.btn-success{
+    background-color: #29A744;
+}
+
+.btn-primary{
+    background-color: #1e74b9;
+}
+
+.btn-warning{
+    background-color: #db7e03;
+}
+
+.btn-error{
+    background-color: #dc3545;
+}
+
+.btn-disabled{
+    background-color: #929392;
+    pointer-events: none;
+}
+
+.button-container{
+    width:100%;
+    height:min-content;
+    border:2px solid #DDDDDC;
+    background-color: #F5F6F8;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    gap:10px;
+}
+
+.btn-primary-outline{
+    color: #1e74b9;
+    border: 2px solid #1e74b9;
+}
+
+.btn-primary-outline:hover{
+    background-color: #1e74b9;
+    color:#fefefe;
+}
+
+.btn-success-outline{
+    color: #29A744;
+    border: 2px solid #29A744;
+}
+
+.btn-success-outline:hover{
+    background-color: #29A744;
+    color:#fefefe
+}
+
+.btn-warning-outline{
+    color: #db7e03;
+    border: 2px solid #db7e03;
+}
+
+.btn-warning-outline:hover{
+    background-color: #db7e03;
+    color:#fefefe
+}
+
+.btn-error-outline{
+    color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+.btn-error-outline:hover{
+    background-color: #dc3545;
+    color:#fefefe
+}
+
+.btn-primary-text{
+    color: #1e74b9;
+    background-color: transparent;
+}
+
+.btn-success-text{
+    color:#29A744;
+    background-color: transparent;
+}
+
+.btn-primary-text:hover,.btn-success-text:hover{
+    background-color:#dad8d8 ;
+}
+
+.btn-link a{
+    text-decoration: none;
+    color:#fefefe;
+}
+
+.btn-sm{
+    font-size: 0.6rem;
+    height:28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-lg{
+    font-size: 1.2rem;
+    height:58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon{
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+.btn-float{
+    border-radius: 50%;
+    padding: 1.2rem;
+    position: fixed;
+    z-index:3;
+}   
+
+.btn-float-not{
+    border-radius: 50%;
+    padding: 1.2rem;
+    position:static;
+    z-index:1;
+}
