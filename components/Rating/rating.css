@@ -19,7 +19,18 @@
     --font-family:'Roboto', sans-serif;
     --hot-pink:#991869;
     --brand-font:'Julius Sans One', sans-serif;
-}
+    --black:#000000;
+    --alert-close-brown:#817462;
+    --darker-green:#1A7152;
+    --alert-close-hover-black:rgb(37, 37, 37);
+    --light-orange:#ffe7c5;
+    --light-red:#fcc5c5;
+    --light-blue:#93d2e2;
+    --light-green:#85F1C8;
+    --alert-background-white:#FFFEFF;
+    --btn-disabled-brown:#929392;
+    --btn-hover-gray:#dad8d8;
+    --rating-success-background:rgb(41, 167, 68,0.4);}
 
 *{
     margin:0;
@@ -69,4 +80,28 @@
 
 .rating-icon:hover{
     color:var(--hot-pink);
+}
+
+.rating-success{
+    background-color: var(--rating-success-background);
+}
+
+.rating-success .rating-icon-checked{
+    color:var(--dark-green);
+}
+
+.rating-warning{
+    background-color: var(--light-orange);
+}
+
+.rating-warning .rating-icon-checked{
+    color:var(--dark-orange);
+}
+
+.rating-error{
+    background-color: var(--light-red);
+}
+
+.rating-error .rating-icon-checked{
+    color:var(--dark-red);
 }
