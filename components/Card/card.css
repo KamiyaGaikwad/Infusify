@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 :root{
     --dark-red:#dc3545;
@@ -16,11 +17,22 @@
     --background-gray:#c2c5c2;
     --shadow-black:rgba(0,0,0,0.2);
     --font-family:'Roboto', sans-serif;
+    --hot-pink:#991869;
+    --brand-font:'Julius Sans One', sans-serif;
+    --black:#000000;
+    --alert-close-brown:#817462;
+    --darker-green:#1A7152;
+    --alert-close-hover-black:rgb(37, 37, 37);
+    --light-orange:#ffe7c5;
+    --light-red:#fcc5c5;
+    --light-blue:#93d2e2;
+    --light-green:#85F1C8;
+    --alert-background-white:#FFFEFF;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     letter-spacing: 0.5px;
     font-family: var(--font-family);
