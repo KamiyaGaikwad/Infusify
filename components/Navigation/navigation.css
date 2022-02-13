@@ -65,7 +65,7 @@
     color:var(--white);
 }
 
-.nav .right .btn,.nav .left .btn{
+.nav .right .btn-link,.nav .left .btn-link{
     background-color: transparent;
 }
 .pb{
