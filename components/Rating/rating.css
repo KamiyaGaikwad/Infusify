@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+:root{
+    --dark-red:#dc3545;
+    --dark-blue:#1e74b9;
+    --white:#fefefe;
+    --dark-orange:#db7e03;
+    --dark-green:#29A744;
+    --container-border-white:#DDDDDC;
+    --container-background-white:#F5F6F8;
+    --violet:rgb(97, 20, 97);
+    --light-pink:#d8bfd8;
+    --card-body-border-white:#E9E8E9;
+    --card-icon-black:rgba(0, 0, 0, 0.54);
+    --card-purple:#9501EE;
+    --background-gray:#c2c5c2;
+    --shadow-black:rgba(0,0,0,0.2);
+    --font-family:'Roboto', sans-serif;
+    --hot-pink:#991869;
+    --brand-font:'Julius Sans One', sans-serif;
+    --black:#000000;
+    --alert-close-brown:#817462;
+    --darker-green:#1A7152;
+    --alert-close-hover-black:rgb(37, 37, 37);
+    --light-orange:#ffe7c5;
+    --light-red:#fcc5c5;
+    --light-blue:#93d2e2;
+    --light-green:#85F1C8;
+    --alert-background-white:#FFFEFF;
+    --btn-disabled-brown:#929392;
+    --btn-hover-gray:#dad8d8;
+    --rating-success-background:rgb(41, 167, 68,0.4);}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: var(--font-family);
+}
+
+.rating-container{
+    width:100%;
+    height:min-content;
+    border:2px solid var(--container-border-white);
+    background-color: var(--container-background-white);
+    padding: 1rem;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    gap:25px;
+}
+
+.rating{
+    background-color:var(--light-pink);
+    padding: 0.5rem;
+    cursor: default;
+}
+
+.rating-icon-checked{
+    color:var(--hot-pink);
+}
+
+.rating-number{
+    font-size: 1.1rem;
+}
+
+.rating-icon{
+    color:var(--light-pink);
+}
+
+.rating-star{
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rating-icon:hover{
+    color:var(--hot-pink);
+}
+
+.rating-success{
+    background-color: var(--rating-success-background);
+}
+
+.rating-success .rating-icon-checked{
+    color:var(--dark-green);
+}
+
+.rating-warning{
+    background-color: var(--light-orange);
+}
+
+.rating-warning .rating-icon-checked{
+    color:var(--dark-orange);
+}
+
+.rating-error{
+    background-color: var(--light-red);
+}
+
+.rating-error .rating-icon-checked{
+    color:var(--dark-red);
+}
