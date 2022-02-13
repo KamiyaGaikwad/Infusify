@@ -218,3 +218,31 @@ input::placeholder{
     line-height: 1.5rem;
 }
 
+.nav .left .brand{
+    height: min-content;
+    width: min-content;
+}
+
+.nav .logo{
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav .input-group input{
+        width:3.5em;
+        height:1.5em;
+    }
+    .nav .input-group input::placeholder{
+        font-size: 0.6em;
+    }
+    .nav{
+        /* width:100%; */
+        font-size: 0.6em;
+    }
+
+    .nav .left a .brand{
+        font-size:0.3em;
+        padding-bottom: 0;
+    }
+  }
+
