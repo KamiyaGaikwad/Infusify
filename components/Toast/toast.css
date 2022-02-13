@@ -107,8 +107,8 @@
     padding: 0.8rem;
     border:none;
     border-radius: 0.3rem;
-    color:#fefefe;
-    background-color: #fefefe;
+    color:var(--white);
+    background-color: var(--white);
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     letter-spacing: 0.5px;
