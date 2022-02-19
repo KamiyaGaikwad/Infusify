@@ -89,7 +89,7 @@
     border-radius: 0.3rem;
 }
 
-.toast .close {
+.toast .toast-close-icon {
     position: absolute;
     right: 10px;
     font-size: 1.6rem;
@@ -97,7 +97,7 @@
     cursor: pointer;
 }
 
-.toast .close:hover{
+.toast .toast-close-icon:hover{
     color:var(--alert-close-hover-black);
 }
 
@@ -130,6 +130,6 @@
     z-index: 3;
 }
 
-.timed-toast .close{
+.timed-toast .toast-close-icon{
     top:14px;
 }
