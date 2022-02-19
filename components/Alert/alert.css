@@ -109,7 +109,7 @@
     border: 1px solid var(--dark-orange);
 }
 
-.alert .close {
+.alert .alert-close-icon {
     position: absolute;
     right: 10px;
     font-size: 1.6rem;
@@ -117,6 +117,6 @@
     cursor: pointer;
 }
 
-.alert .close:hover{
+.alert .alert-close-icon:hover{
     color:var(--alert-close-hover-black);
 }
