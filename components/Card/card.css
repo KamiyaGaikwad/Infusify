@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+:root{
+    --dark-red:#dc3545;
+    --dark-blue:#1e74b9;
+    --white:#fefefe;
+    --dark-orange:#db7e03;
+    --dark-green:#29A744;
+    --container-border-white:#DDDDDC;
+    --container-background-white:#F5F6F8;
+    --violet:rgb(97, 20, 97);
+    --light-pink:#d8bfd8;
+    --card-body-border-white:#E9E8E9;
+    --card-icon-black:rgba(0, 0, 0, 0.54);
+    --card-purple:#9501EE;
+    --background-gray:#c2c5c2;
+    --shadow-black:rgba(0,0,0,0.2);
+    --font-family:'Roboto', sans-serif;
+    --hot-pink:#991869;
+    --brand-font:'Julius Sans One', sans-serif;
+    --black:#000000;
+    --alert-close-brown:#817462;
+    --darker-green:#1A7152;
+    --alert-close-hover-black:rgb(37, 37, 37);
+    --light-orange:#ffe7c5;
+    --light-red:#fcc5c5;
+    --light-blue:#93d2e2;
+    --light-green:#85F1C8;
+    --alert-background-white:#FFFEFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: var(--font-family);
+}
+
+#card-container{
+    background-color:var(--background-gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.card{
+    margin:1rem;
+    border-bottom:1px solid var(--card-body-border-white);
+    border-radius: 0.3rem;
+    background-color: var(--white);
+}
+
+.card-basic{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-img-top{
+    height:196px;
+    width: 100%;
+    grid-area: img;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card-title{
+    grid-area:title;
+}
+
+.card-subtitle{
+    grid-area:subtitle;
+    margin-bottom: 1rem;
+    color: var(--card-icon-black);
+    line-height: 1.5rem;
+}
+
+.card-text{
+    grid-area:ctext;
+    font-size:0.9rem;
+    color: var(--card-icon-black);
+    line-height: 1.2rem;
+}
+
+.card-btn-1 {
+    grid-area:read;
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--card-purple);
+}
+
+.card-btn-2 {
+    grid-area:book;
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--card-purple);
+}
+
+.card-icon-1 {
+    grid-area:fav;
+    font-size: 1.2rem;
+    color: var(--card-icon-black);
+}
+
+.card-icon-2 {
+    grid-area:share;
+    font-size: 1.2rem;
+    color: var(--card-icon-black);
+}
+
+.card-icon-3 {
+    grid-area:more;
+    font-size: 1.2rem;
+    color: var(--card-icon-black);
+}
+
+.card-body{
+    padding:10px;
+    border-left:1px solid var(--card-body-border-white);
+    border-right:1px solid var(--card-body-border-white);
+}
+
+
+.card-actions {
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: -30px;
+    left: -10px;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+
+.card-icons{
+    display: flex;
+    justify-content: center;
+    gap:35px;
+}
+
+.card-only-buttons{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book . . .";
+}
+.card-only-icons{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    ". . fav share more";
+}
+
+.card-only-icons .card-btn-1,.card-only-icons .card-btn-2{
+    color: transparent;
+    pointer-events: none;
+    cursor: default;
+    z-index: -9;
+}
+
+.card-only-buttons .card-icon-1,.card-only-buttons .card-icon-2,.card-only-buttons .card-icon-3{
+    color: transparent;
+    pointer-events: none;
+    cursor: default;
+    z-index: -9;
+}
+
+.card-text-over-image{
+    height: 340px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    ". . fav share more";
+}
+.card-text-over-image .card-body{
+    position: relative;
+}
+
+.card-text-over-image .card-title{
+    position: absolute;
+    bottom:150px;
+    color: var(--white);
+}
+
+.card-text-over-image .card-subtitle{
+    position: absolute;
+    bottom: 110px;
+    color: var(--white);
+}
+
+.card-with-header{
+    height: 400px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "img img img img img"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-with-header .card-text{
+    position: relative;
+    bottom: -210px;
+}
+
+.card-with-header .card-actions{
+    position: relative;
+    bottom: -240px;
+}
+
+.card-with-header .card-img-top{
+    position: relative;
+    top: -100px;
+    border-radius: 0;
+}
+
+.card-horizontal-image-text{
+    height: 170px;
+    width:340px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img img img img img"
+    "title title title title title"
+    "subtitle subtitle subtitle subtitle subtitle"
+    "ctext ctext ctext ctext ctext"
+    "read book fav share more";
+}
+
+.card-horizontal-image-text .card-text{
+    display: none;
+}
+ 
+.card-horizontal-image-text .card-img-top{
+    height:100px;
+    width:110px;
+} 
+
+.card-horizontal-image-text .card-body{
+    border-style: none;
+    position: relative;
+    top:-82px;
+}
+
+.card-horizontal-image-text .card-title,.card-horizontal-image-text .card-subtitle{
+    position: relative;
+    left:120px;
+    top:-10px;
+}
+
+.card-badge,.card-dismiss{
+    position: relative;
+}
+.card-badge .badge{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.badge{
+    position: relative;
+}
+
+.status-online{
+    background-color: var(--dark-green);
+}
+
+.badge-sq{
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    color:var(--white);
+}
+
+.card-dismiss .card-close-icon{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 1.7rem;
+    cursor:pointer;
+}
+
+.card-text-only .card-img-top {
+    display: none;
+}
+
+.card-text-only{
+    height: 180px;
+    width:340px;
+    padding-top: 5px;
+}
+
+.card-shadow{
+    box-shadow: 0 4px 8px 0 var(--shadow-black);
+    transition: 0.3s;
+}
+
+.card-shadow:hover{
+    box-shadow: 0 8px 16px 0 var(--shadow-black);
+}
