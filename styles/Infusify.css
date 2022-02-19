@@ -409,7 +409,7 @@
 
 /* Card */
 
-#card{
+#card-container{
     background-color:var(--background-gray);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
