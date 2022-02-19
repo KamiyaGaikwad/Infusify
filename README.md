@@ -27,6 +27,6 @@ https://infusify.netlify.app/
 <br />
 
 ## Preview
-![Desktop View](Images\desktop-preview.png)
+![Desktop View](Images/infusify.PNG)
 
 
