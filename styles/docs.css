@@ -37,6 +37,7 @@
     justify-content: space-between;
     background-color: var(--hot-pink);
     padding: 0 2rem;
+    
 }
 
 .nav .left{
@@ -164,8 +165,10 @@ input::placeholder{
     grid-column-end: 2;
     background-color: var(--container-border-white);
     position: fixed;
+    top:0;
     height: 100%;
-    padding-top:1rem;
+    padding-top:3rem;
+    z-index:-1;
 }
 
 .link-list{
@@ -180,7 +183,7 @@ input::placeholder{
 
 .grid-container{
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
     overflow: hidden;
 }
 
@@ -196,12 +199,13 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     position: relative;
     width: 100%;
     height:340%;
     padding-top: 3rem;
+    margin:1rem;
 }
 .text-font{
     font-family: var(--font-family);
@@ -237,3 +241,20 @@ input::placeholder{
     }
   }
 
+  .main-content .alert-container{
+      margin: 0;
+  }
+
+  .nav-head{
+      position: absolute;
+      top:13px;
+      font-size: larger;
+  }
+
+  .nav-head .btn-link{
+      color:var(--black);
+  }
+
+  .main-content .alert{
+    font-family: var(--font-family);
+  }
