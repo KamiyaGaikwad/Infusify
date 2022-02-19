@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+:root{
+    --dark-red:#dc3545;
+    --dark-blue:#1e74b9;
+    --white:#fefefe;
+    --dark-orange:#db7e03;
+    --dark-green:#29A744;
+    --container-border-white:#DDDDDC;
+    --container-background-white:#F5F6F8;
+    --violet:rgb(97, 20, 97);
+    --light-pink:#d8bfd8;
+    --card-body-border-white:#E9E8E9;
+    --card-icon-black:rgba(0, 0, 0, 0.54);
+    --card-purple:#9501EE;
+    --background-gray:#c2c5c2;
+    --shadow-black:rgba(0,0,0,0.2);
+    --font-family:'Roboto', sans-serif;
+    --hot-pink:#991869;
+    --brand-font:'Julius Sans One', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: var(--brand-font);
+}
+
+.nav{
+    display:flex;
+    align-items: center;
+    background-color: cadetblue;
+    justify-content: space-between;
+    background-color: var(--hot-pink);
+    padding: 0 2rem;
+}
+
+.nav .left{
+    display: flex;
+    align-items: center;
+}
+
+.nav .right{
+    display: flex;
+    align-items: center;
+}
+
+.main{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .left{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .right{
+    display:flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.btn{
+    height:min-content;
+    width:min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    color:var(--white);
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.btn-link{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.nav .right .btn,.nav .left .btn{
+    background-color: transparent;
+}
+
+.main .left .btn-link{
+    background-color: var(--hot-pink);
+    width: max-content;
+    font-size: 1rem;
+    align-self: center;
+}
+
+.img-resp{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.responsive-container{
+    width:600px;
+    min-height: 100px;
+}
+
+.pb{
+    padding-bottom: 0.8rem;
+}
+
+.main h1{
+    color:var(--hot-pink);
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+    gap:5px;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.input-group input{
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    border: 3px solid transparent;
+    font-family: var(--font-family);
+    background-color: var(--card-body-border-white);
+    outline: none;
+}
+
+.nav .input-group{
+    padding:0;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+.nav .input-group input:focus {
+    border: 3px solid var(--background-gray);
+  }
+
+.main h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main p{
+    font-size: 1.08rem;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.brand{
+    font-family: var(--brand-font);
+    font-weight: 700;
+}
+
+input::placeholder{
+    font-family: var(--brand-font);
+}
+
+.nav .left .brand{
+    height: min-content;
+    width: min-content;
+}
+
+.nav .logo{
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav .input-group input{
+        width:3.5em;
+        height:1.5em;
+    }
+    .nav .input-group input::placeholder{
+        font-size: 0.6em;
+    }
+    .nav{
+        /* width:100%; */
+        font-size: 0.6em;
+    }
+
+    .nav .left a .brand{
+        font-size:0.3em;
+        padding-bottom: 0;
+    }
+  }
+
+.search-links{
+    position: absolute;
+    top:70px;
+    right:80px;
+    display: flex;
+    flex-wrap: wrap;
+    width:30%;
+    gap:10px;
+    justify-content: center;
+    background-color: var(--background-gray);
+    padding:1rem;
+    border-radius: 0.3rem;
+    transition: 0.5s ease-out;
+}
+
+.search-links .btn-link{
+    background-color: var(--hot-pink);
+}
+
+.hide{
+    display: none;
+}
