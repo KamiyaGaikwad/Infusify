@@ -258,3 +258,7 @@ input::placeholder{
   .main-content .alert{
     font-family: var(--font-family);
   }
+
+  .text-font span{
+      font-family: var(--font-family);
+  }
