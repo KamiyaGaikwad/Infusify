@@ -21,16 +21,18 @@ To use any of the components within this library, you need to add 2 files given 
 <br />
 
 ## Components
-1.Alert<br/>
-2.Avatar<br/>
-3.Badge<br/>
-4.Button<br/>
-5.Card<br/>
-6.Image<br/>
-7.Input<br/>
-8.Navigation<br/>
-9.Rating<br/>
-10.Toast
+ | Number | Components   | Links to direct import                                         |
+ |--------|--------------|----------------------------------------------------------------|
+ | 1      | Alert        | https://infusify.netlify.app/components/alert/alert            |
+ | 2      | Avatar       | https://infusify.netlify.app/components/avatar/avatar          |
+ | 3      | Badge        | https://infusify.netlify.app/components/badge/badge            |
+ | 4      | Button       | https://infusify.netlify.app/components/button/button          |
+ | 5      | Card         | https://infusify.netlify.app/components/card/card              |
+ | 6      | Image        | https://infusify.netlify.app/components/image/image            |
+ | 7      | Input        | https://infusify.netlify.app/components/input/input            |
+ | 8      | Navigation   | https://infusify.netlify.app/components/navigation/navigation  |
+ | 9      | Rating       | https://infusify.netlify.app/components/rating/rating          |
+ | 10     | Toast        | https://infusify.netlify.app/components/toast/toast            |
 
 <br />
 
