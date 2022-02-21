@@ -1,19 +1,19 @@
-const btn = document.querySelector(".btn");
+const eye = document.querySelector(".eye");
 const pwd = document.querySelector(".pwd");
 const check = document.querySelector(".check");
 const errorShow = document.querySelector(".error-show");
 const toggleClass = () =>{
     if(pwd.type == "text"){
         pwd.type = "password";
-        btn.innerHTML = btn.innerHTML.replace(`<i class="fas fa-eye-slash"></i>`,`<i class="fas fa-eye"></i>`);
+        eye.innerHTML = eye.innerHTML.replace(`<i class="fas fa-eye-slash"></i>`,`<i class="fas fa-eye"></i>`);
     }
     else{
         pwd.type = "text"
-        btn.innerHTML = btn.innerHTML.replace(`<i class="fas fa-eye"></i>`,`<i class="fas fa-eye-slash"></i>`);
+        eye.innerHTML = eye.innerHTML.replace(`<i class="fas fa-eye"></i>`,`<i class="fas fa-eye-slash"></i>`);
     }
 }
 
-btn.addEventListener("click",toggleClass);
+eye.addEventListener("click",toggleClass);
 
 const passwordChecker = () =>{
     if(check.value.length <8){

@@ -37,11 +37,10 @@
     padding:0;
     box-sizing: border-box;
     letter-spacing: 0.5px;
-    font-family: var(--font-family);
 }
 
 .rating-container{
-    width:100%;
+    width:90%;
     height:min-content;
     border:2px solid var(--container-border-white);
     background-color: var(--container-background-white);
@@ -52,6 +51,7 @@
     align-items: center;
     border-radius: 0.3rem;
     gap:25px;
+    font-family: var(--font-family);
 }
 
 .rating{

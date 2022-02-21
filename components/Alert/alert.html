@@ -6,10 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="alert.css">
+    <link rel="stylesheet" href="/styles/docs.css">
     <title>Infusify | Docs | Alert</title>
 </head>
 <body>
+    <div class="flex-container flex-columns">
+    <nav class="nav">
+        <div class="left">
+        <a href="https://infusify.netlify.app/" class="logo"><img src="/Images/logo-img.png"></a>
+        <a href="https://infusify.netlify.app/" class="btn btn-link brand">Infusify</a>
+        </div>
+        <div class="right">
+        <div class="input-group search hide"><input type="text" placeholder="Search"></div>
+        <a href="/docs.html" class="btn active">Docs</a>
+        <a href="https://github.com/KamiyaGaikwad/Infusify" class="btn btn-link">Github</a>
+    </div>
+    </nav>
+    <div class="flex-container">
+        <nav class="flex-container flex-columns nav-vertical">
+            <ul class="link-list">
+                <li class="nav-list"><a href="/docs.html" class="btn btn-link page-link">Getting started</a></li>
+                <li class="nav-list  active-tab"><a href="alert.html" class="btn btn-link page-link">Alert</a></li>
+                <li class="nav-list"><a href="/components/Avatar/avatar.html" class="btn btn-link page-link">Avatar</a></li>
+                <li class="nav-list"><a href="/components/Badge/badge.html" class="btn btn-link page-link">Badge</a></li>
+                <li class="nav-list"><a href="/components/Button/button.html" class="btn btn-link page-link">Button</a></li>
+                <li class="nav-list"><a href="/components/Card/card.html" class="btn btn-link page-link">Card</a></li>
+                <li class="nav-list"><a href="/components/Image/image.html" class="btn btn-link page-link">Image</a></li>
+                <li class="nav-list"><a href="/components/Input/input.html" class="btn btn-link page-link">Input</a></li>
+                <li class="nav-list"><a href="/components/Navigation/navigation.html" class="btn btn-link page-link">Navigation</a></li>
+                <li class="nav-list"><a href="/components/Rating/rating.html" class="btn btn-link page-link">Rating</a></li>
+                <li class="nav-list"><a href="/components/Toast/toast.html" class="btn btn-link page-link">Toast</a></li>
+            </ul>
+        </nav>
+
+        <main class="ml mt flex-container flex-columns">
+            <h1 class="active-link pb">Alert</h1>
+            <p class="text-font pb">An alert box is a type of popup which is used to inform a user while they are doing some other task</p>
+
     <section id="alert">
+        <h2 class="pb">Simple Alert</h2>
         <div class="alert-container">
         <div class="alert primary">
             <i class="fas fa-info-circle"></i>
@@ -31,6 +66,13 @@
             This is a Warning Alert - Check it now!
         </div>
     </div>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Primary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520Error%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+    style="width: 800px; height: 625px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+
+  <h2 class="pb">Outline Alert</h2>
     <div class="alert-container">
         <div class="alert outline-primary">
             <i class="fas fa-info-circle"></i>
@@ -52,6 +94,13 @@
             This is a Warning Alert - Check it now!
         </div>
     </div>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Primary%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520Error%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Success%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520outline-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520Warning%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A"
+    style="width: 800px; height: 600px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+
+  <h2 class="pb">Alert with Close button</h2>
     <div class="alert-container">
         <div class="alert error alert-close">
             <i class="fas fa-exclamation-triangle"></i>
@@ -59,7 +108,14 @@
             <i class="far fa-times-circle alert-close-icon"></i>
         </div>
     </div>
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520error%2520alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520Error%2520Alert%2520-%2520Check%2520it%2520now%21%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-times-circle%2520close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+    style="width: 800px; height: 300px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+
 </section>
+</main></div></div>
 <script src="alert.js"></script>
 </body>
 </html>
