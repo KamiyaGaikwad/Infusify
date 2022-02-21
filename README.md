@@ -20,6 +20,20 @@ To use any of the components within this library, you need to add 2 files given 
 
 <br />
 
+## Components
+1.Alert
+2.Avatar
+3.Badge
+4.Button
+5.Card
+6.Image
+7.Input
+8.Navigation
+9.Rating
+10.Toast
+
+<br />
+
 ## Live Link for documentation site
 https://infusify.netlify.app/
 
