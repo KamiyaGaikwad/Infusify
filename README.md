@@ -21,15 +21,15 @@ To use any of the components within this library, you need to add 2 files given 
 <br />
 
 ## Components
-1.Alert
-2.Avatar
-3.Badge
-4.Button
-5.Card
-6.Image
-7.Input
-8.Navigation
-9.Rating
+1.Alert<br/>
+2.Avatar<br/>
+3.Badge<br/>
+4.Button<br/>
+5.Card<br/>
+6.Image<br/>
+7.Input<br/>
+8.Navigation<br/>
+9.Rating<br/>
 10.Toast
 
 <br />
