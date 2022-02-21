@@ -377,11 +377,11 @@ h2{
     width: 26px;
   }
   
-  input:checked + .slider {
+  .input-check:checked + .slider {
     background-color: var(--black);
   }
   
-  input:checked + .slider:before {
+  .input-check:checked + .slider:before {
     transform: translateX(26px);
   }
   
