@@ -40,7 +40,7 @@
 }
 
 .rating-container{
-    width:90%;
+    /* width:70%; */
     height:min-content;
     border:2px solid var(--container-border-white);
     background-color: var(--container-background-white);
@@ -104,4 +104,8 @@
 
 .rating-error .rating-icon-checked{
     color:var(--dark-red);
+}
+
+main{
+    width:500px;
 }
