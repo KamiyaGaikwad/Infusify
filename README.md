@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/user/96974b03-e435-4d4d-89a2-486553721b5a/project/e6e649bb-ef32-4163-a17f-12de2b661864.svg)](https://wakatime.com/badge/user/96974b03-e435-4d4d-89a2-486553721b5a/project/e6e649bb-ef32-4163-a17f-12de2b661864)
 # Infusify
 Infusify is a CSS Component library created purely based on HTML and CSS. 
 
@@ -51,5 +52,10 @@ https://infusify.netlify.app/
 
 ## Preview
 ![Desktop View](Images/infusify.PNG)
+
+##Demo Video
+
+https://user-images.githubusercontent.com/79163529/155009355-a822b06c-ebc9-4533-b16b-c3ae3ea7fd8f.mp4
+
 
 
