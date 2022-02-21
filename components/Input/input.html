@@ -6,9 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="/styles/docs.css">
     <title>Infusify | Docs | Input</title>
 </head>
 <body>
+    <div class="flex-container flex-columns">
+        <nav class="nav">
+            <div class="left">
+            <a href="https://infusify.netlify.app/" class="logo"><img src="/Images/logo-img.png"></a>
+            <a href="https://infusify.netlify.app/" class="btn btn-link brand">Infusify</a>
+            </div>
+            <div class="right">
+            <div class="input-group search hide"><input type="text" placeholder="Search"></div>
+            <a href="/docs.html" class="btn active">Docs</a>
+            <a href="https://github.com/KamiyaGaikwad/Infusify" class="btn btn-link">Github</a>
+        </div>
+        </nav>
+        <div class="flex-container">
+            <nav class="flex-container flex-columns nav-vertical">
+                <ul class="link-list">
+                    <li class="nav-list"><a href="/docs.html" class="btn btn-link page-link">Getting started</a></li>
+                    <li class="nav-list"><a href="/components/Alert/alert.html" class="btn btn-link page-link">Alert</a></li>
+                    <li class="nav-list"><a href="/components/Avatar/avatar.html" class="btn btn-link page-link">Avatar</a></li>
+                    <li class="nav-list"><a href="/components/Badge/badge.html" class="btn btn-link page-link">Badge</a></li>
+                    <li class="nav-list"><a href="/components/Button/button.html" class="btn btn-link page-link">Button</a></li>
+                    <li class="nav-list"><a href="/components/Card/card.html" class="btn btn-link page-link">Card</a></li>
+                    <li class="nav-list"><a href="/components/Image/image.html" class="btn btn-link page-link">Image</a></li>
+                    <li class="nav-list  active-tab"><a href="/components/Input/input.html" class="btn btn-link page-link">Input</a></li>
+                    <li class="nav-list"><a href="/components/Navigation/navigation.html" class="btn btn-link page-link">Navigation</a></li>
+                    <li class="nav-list"><a href="/components/Rating/rating.html" class="btn btn-link page-link">Rating</a></li>
+                    <li class="nav-list"><a href="/components/Toast/toast.html" class="btn btn-link page-link">Toast</a></li>
+                </ul>
+            </nav>
+            <main class="ml mt flex-container flex-columns">
+                <h1 class="active-link pb">Input</h1>
+                <p class="text-font pb"> Inputs are used to take information from the user.</p>
+    
+<h2>Label Inputs</h2>
     <div class="input-container">
     <div class="input-group">
         <label>Email-Id*</label>
@@ -16,12 +50,28 @@
     </div>
     <div class="input-group">
         <label>Password*</label>
-        <input class="pwd" type="password" required /><button class="btn btn-primary"><i class="fas fa-eye"></i></button>
+        <input class="pwd" type="password" required /><button class="btn btn-primary eye"><i class="fas fa-eye"></i></button>
     </div>
     </div>
+
+    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253EEmail-Id*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520type%253D%2522email%2522%2520required%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253EPassword*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522pwd%2522%2520type%253D%2522password%2522%2520required%2520%252F%253E%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-eye%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+  style="width: 800px; height: 400px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+    <h2>Textarea</h2>
     <div class="input-container">
         <textarea class="txt-input" placeholder="Write Text here in Text Area"></textarea>
     </div>
+
+    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctextarea%2520class%253D%2522txt-input%2522%2520placeholder%253D%2522Write%2520Text%2520here%2520in%2520Text%2520Area%2522%253E%253C%252Ftextarea%253E%250A"
+  style="width: 800px; height: 225px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+    <h2>Status Input</h2>
     <div class="input-container">
         <div class="input-group">
         <div class="error-label">Error input</div>
@@ -38,6 +88,14 @@
         <input type="text" class="success-input" />
     </div>
     </div>
+
+    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-label%2522%253EError%2520input%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522error-input%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522warning-label%2522%253EWarning%2520input%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522warning-input%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522success-label%2522%253ESuccess%2520input%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522success-input%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520"
+  style="width: 800px; height: 448px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+    <h2>Radio Inputs</h2>
     <div class="input-container">
         <div class="radio-container">
         <div class="radio-group">
@@ -51,6 +109,14 @@
             <label for="firefox">Firefox</label></div>
         </div>
     </div>
+
+    <iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522%2522radio-container%2522%2522%253E%250A%253Cdiv%2520class%253D%2522%2522radio-group%2522%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522%2522radio%2522%2522%2520class%253D%2522%2522radio%2522%2522%2520id%253D%2522%2522chrome%2522%2522%2520name%253D%2522%2522radio-btn%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522chrome%2522%2522%253EGoogle%2520Chrome%253C%252Flabel%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522radio-group%2522%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522%2522radio%2522%2522%2520class%253D%2522%2522radio%2522%2522%2520id%253D%2522%2522brave%2522%2522%2520name%253D%2522%2522radio-btn%2522%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522brave%2522%2522%253EBrave%2520Browser%253C%252Flabel%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522radio-group%2522%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522%2522radio%2522%2522%2520class%253D%2522%2522radio%2522%2522%2520id%253D%2522%2522firefox%2522%2522%2520name%253D%2522%2522radio-btn%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522firefox%2522%2522%253EFirefox%253C%252Flabel%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520"
+    style="width: 800px; height: 411px; border:0; transform: scale(1); overflow:hidden;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+
+    <h2>Validation and Errors Styled</h2>
     <div class="input-container">
         <div class="input-group">
             <label>Password*</label>
@@ -58,6 +124,13 @@
             <div class="error-show">Password should atleast have 8 characters</div>
         </div>
     </div>
+
+    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28171%2C184%2C195%2C0%29&t=one-dark&wt=none&l=auto&width=800&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-group%2522%253E%250A%2520%2520%2520%2520%253Clabel%253EPassword*%253C%252Flabel%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522pwd%2520check%2520error-input%2522%2520type%253D%2522password%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522error-show%2522%253EPassword%2520should%2520atleast%2520have%25208%2520characters%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+  style="width: 800px; height: 262px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</main></div></div>
     <script src="input.js"></script>
 </body>
 </html>

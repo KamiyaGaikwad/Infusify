@@ -7,7 +7,7 @@ const toastBtn = document.querySelector(".toast-btn");
 const timedToast = document.querySelector(".timed-toast");
 
 //input
-const btn = document.querySelector(".btn");
+const btn = document.querySelector(".eye");
 const pwd = document.querySelector(".pwd");
 const check = document.querySelector(".check");
 const errorShow = document.querySelector(".error-show");
@@ -35,11 +35,11 @@ function hideToast(){
 const toggleClass = () =>{
     if(pwd.type == "text"){
         pwd.type = "password";
-        btn.innerHTML = btn.innerHTML.replace(`<i class="fas fa-eye-slash"></i>`,`<i class="fas fa-eye"></i>`);
+        eye.innerHTML = eye.innerHTML.replace(`<i class="fas fa-eye-slash"></i>`,`<i class="fas fa-eye"></i>`);
     }
     else{
-        pwd.type = "text"
-        btn.innerHTML = btn.innerHTML.replace(`<i class="fas fa-eye"></i>`,`<i class="fas fa-eye-slash"></i>`);
+        eye.type = "text"
+        btn.innerHTML = eye.innerHTML.replace(`<i class="fas fa-eye"></i>`,`<i class="fas fa-eye-slash"></i>`);
     }
 }
 
@@ -58,7 +58,7 @@ const passwordChecker = () =>{
 }
 
 check.addEventListener("input",passwordChecker);
-btn.addEventListener("click",toggleClass);
+eye.addEventListener("click",toggleClass);
 
 //card-dismiss function
 const dismissCard = () =>{
