@@ -160,13 +160,14 @@ input::placeholder{
 }
 
 .nav .link-list,.nav-vertical .link-list{
-    padding:1rem;
+    padding:0.5rem;
     list-style: none;
 }
 
 .nav .nav-list,.nav-vertical .nav-list{
-    padding:0.8em;
+    padding:0.2em 0.8em 1.2em 0.8em;
     cursor: pointer;
+    text-align: center;
 }
 
 .active-link{
