@@ -21,18 +21,18 @@ To use any of the components within this library, you need to add 2 files given 
 <br />
 
 ## Components
- | Number | Components   | Links to direct import                                         |
- |--------|--------------|----------------------------------------------------------------|
- | 1      | Alert        | https://infusify.netlify.app/components/alert/alert            |
- | 2      | Avatar       | https://infusify.netlify.app/components/avatar/avatar          |
- | 3      | Badge        | https://infusify.netlify.app/components/badge/badge            |
- | 4      | Button       | https://infusify.netlify.app/components/button/button          |
- | 5      | Card         | https://infusify.netlify.app/components/card/card              |
- | 6      | Image        | https://infusify.netlify.app/components/image/image            |
- | 7      | Input        | https://infusify.netlify.app/components/input/input            |
- | 8      | Navigation   | https://infusify.netlify.app/components/navigation/navigation  |
- | 9      | Rating       | https://infusify.netlify.app/components/rating/rating          |
- | 10     | Toast        | https://infusify.netlify.app/components/toast/toast            |
+ | Number | Components   | Links to direct import                                             |
+ |--------|--------------|--------------------------------------------------------------------|
+ | 1      | Alert        | https://infusify.netlify.app/components/alert/alert.css            |
+ | 2      | Avatar       | https://infusify.netlify.app/components/avatar/avatar.css          |
+ | 3      | Badge        | https://infusify.netlify.app/components/badge/badge.css            |
+ | 4      | Button       | https://infusify.netlify.app/components/button/button.css          |
+ | 5      | Card         | https://infusify.netlify.app/components/card/card.css              |
+ | 6      | Image        | https://infusify.netlify.app/components/image/image.css            |
+ | 7      | Input        | https://infusify.netlify.app/components/input/input.css            |
+ | 8      | Navigation   | https://infusify.netlify.app/components/navigation/navigation.css  |
+ | 9      | Rating       | https://infusify.netlify.app/components/rating/rating.css          |
+ | 10     | Toast        | https://infusify.netlify.app/components/toast/toast.css            |
 
 <br />
 
