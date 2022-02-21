@@ -33,6 +33,14 @@ To use any of the components within this library, you need to add 2 files given 
  | 8      | Navigation   | https://infusify.netlify.app/components/navigation/navigation.css  |
  | 9      | Rating       | https://infusify.netlify.app/components/rating/rating.css          |
  | 10     | Toast        | https://infusify.netlify.app/components/toast/toast.css            |
+ 
+ ### Component's Script Links
+ | Number | Components   | Links to direct add javascripts                           |
+ |--------|--------------|-----------------------------------------------------------|
+ | 1      | Alert        | https://infusify.netlify.app/components/alert/alert.js    |
+ | 2      | Card         | https://infusify.netlify.app/components/card/card.js      |
+ | 3      | Input        | https://infusify.netlify.app/components/input/input.js    |
+ | 4      | Toast        | https://infusify.netlify.app/components/toast/toast.js    |
 
 <br />
 
