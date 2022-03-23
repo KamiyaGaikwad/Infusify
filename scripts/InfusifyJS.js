@@ -16,6 +16,11 @@ const errorShow = document.querySelector(".error-show");
 const cardDismiss = document.querySelector(".card-dismiss");
 const cardCloseIcon = document.querySelector(".card-close-icon");
 
+//Modal
+const modalBtn = document.querySelector(".modal-btn");
+const modalbackground = document.querySelector(".modal-background");
+const modalCloseIcon = document.querySelector(".modal-close-icon")
+
 //alert close function
 close.addEventListener("click", ()=> {
     alertClose.style.display = "none";
@@ -66,3 +71,18 @@ const dismissCard = () =>{
 }
 
 cardCloseIcon.addEventListener("click",dismissCard);
+
+//Show Modal and hide modal by close button or clicking anywhere on page
+modalBtn.addEventListener("click", ()=> {
+    modalbackground.style.display = "block";
+})
+
+modalCloseIcon.addEventListener("click",()=>{
+    modalbackground.style.display = "none";
+})
+
+window.onclick = function(e) {
+    if (e.target == modalbackground) {
+      modalbackground.style.display = "none";
+    }
+  }
