@@ -22,26 +22,32 @@ To use any of the components within this library, you need to add 2 files given 
 <br />
 
 ## Components
- | Number | Components   | Links to direct import                                             |
- |--------|--------------|--------------------------------------------------------------------|
- | 1      | Alert        | https://infusify.netlify.app/components/alert/alert.css            |
- | 2      | Avatar       | https://infusify.netlify.app/components/avatar/avatar.css          |
- | 3      | Badge        | https://infusify.netlify.app/components/badge/badge.css            |
- | 4      | Button       | https://infusify.netlify.app/components/button/button.css          |
- | 5      | Card         | https://infusify.netlify.app/components/card/card.css              |
- | 6      | Image        | https://infusify.netlify.app/components/image/image.css            |
- | 7      | Input        | https://infusify.netlify.app/components/input/input.css            |
- | 8      | Navigation   | https://infusify.netlify.app/components/navigation/navigation.css  |
- | 9      | Rating       | https://infusify.netlify.app/components/rating/rating.css          |
- | 10     | Toast        | https://infusify.netlify.app/components/toast/toast.css            |
+ | Number | Components     | Links to direct import                                             |
+ |--------|----------------|--------------------------------------------------------------------|
+ | 1      | Alert          | https://infusify.netlify.app/components/alert/alert.css            |
+ | 2      | Avatar         | https://infusify.netlify.app/components/avatar/avatar.css          |
+ | 3      | Badge          | https://infusify.netlify.app/components/badge/badge.css            |
+ | 4      | Button         | https://infusify.netlify.app/components/button/button.css          |
+ | 5      | Card           | https://infusify.netlify.app/components/card/card.css              |
+ | 6      | Grid           | https://infusify.netlify.app/components/Grid/grid.css              |
+ | 7      | Image          | https://infusify.netlify.app/components/image/image.css            |
+ | 8      | Input          | https://infusify.netlify.app/components/input/input.css            |
+ | 9      | List           | https://infusify.netlify.app/components/List/list.css              |
+ | 10     | Modal          | https://infusify.netlify.app/components/Modal/modal.css            |
+ | 11     | Navigation     | https://infusify.netlify.app/components/navigation/navigation.css  |
+ | 12     | Rating         | https://infusify.netlify.app/components/rating/rating.css          |
+ | 13     | Toast          | https://infusify.netlify.app/components/toast/toast.css            |
+ | 14     | Text Utilities | https://infusify.netlify.app/components/navigation/navigation.css  |
  
  ### Component's Script Links
- | Number | Components   | Links to direct add javascripts                           |
- |--------|--------------|-----------------------------------------------------------|
- | 1      | Alert        | https://infusify.netlify.app/components/alert/alert.js    |
- | 2      | Card         | https://infusify.netlify.app/components/card/card.js      |
- | 3      | Input        | https://infusify.netlify.app/components/input/input.js    |
- | 4      | Toast        | https://infusify.netlify.app/components/toast/toast.js    |
+ | Number | Components     | Links to direct add javascripts                           |
+ |--------|----------------|-----------------------------------------------------------|
+ | 1      | Alert          | https://infusify.netlify.app/components/alert/alert.js    |
+ | 2      | Card           | https://infusify.netlify.app/components/card/card.js      |
+ | 3      | Input          | https://infusify.netlify.app/components/input/input.js    |
+ | 4      | Modal          | https://infusify.netlify.app/components/Modal/modal.js    |
+ | 5      | Toast          | https://infusify.netlify.app/components/toast/toast.js    |
+ 
 
 <br />
 
