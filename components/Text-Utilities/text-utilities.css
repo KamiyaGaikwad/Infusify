@@ -133,3 +133,16 @@
     width:100%;
     margin:1rem 0;
 }
+
+.small-text{
+    font-size:0.68rem;
+}
+
+.gray-text{
+    color:var(--card-icon-black);
+}
+
+.center-text{
+    width:100%;
+    text-align: center;
+}
