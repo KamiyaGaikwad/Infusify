@@ -392,3 +392,7 @@ h2{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .mb-2{
+      margin-bottom: 3rem;
+  }
