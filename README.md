@@ -59,7 +59,7 @@ https://infusify.netlify.app/
 ## Preview
 ![Desktop View](Images/infusify.PNG)
 
-##Demo Video
+## Demo Video
 
 https://user-images.githubusercontent.com/79163529/155009355-a822b06c-ebc9-4533-b16b-c3ae3ea7fd8f.mp4
 
