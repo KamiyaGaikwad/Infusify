@@ -40,13 +40,14 @@ To use any of the components within this library, you need to add 2 files given 
  | 14     | Text Utilities | https://infusify.netlify.app/components/navigation/navigation.css  |
  
  ### Component's Script Links
- | Number | Components     | Links to direct add javascripts                           |
- |--------|----------------|-----------------------------------------------------------|
- | 1      | Alert          | https://infusify.netlify.app/components/alert/alert.js    |
- | 2      | Card           | https://infusify.netlify.app/components/card/card.js      |
- | 3      | Input          | https://infusify.netlify.app/components/input/input.js    |
- | 4      | Modal          | https://infusify.netlify.app/components/Modal/modal.js    |
- | 5      | Toast          | https://infusify.netlify.app/components/toast/toast.js    |
+ | Number | Components     | Links to direct add javascripts                                    |
+ |--------|----------------|--------------------------------------------------------------------|
+ | 1      | Alert          | https://infusify.netlify.app/components/alert/alert.js             |
+ | 2      | Card           | https://infusify.netlify.app/components/card/card.js               |
+ | 3      | Input          | https://infusify.netlify.app/components/input/input.js             |
+ | 4      | Modal          | https://infusify.netlify.app/components/Modal/modal.js             |
+ | 5      | Navigation     | https://infusify.netlify.app/components/navigation/navigation.js   |
+ | 6      | Toast          | https://infusify.netlify.app/components/toast/toast.js             |
  
 
 <br />
