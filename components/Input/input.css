@@ -138,3 +138,36 @@ input{
 .error-show{
     color:var(--dark-red);
 }
+
+.slider-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.slide {
+    overflow: hidden;
+    width: 9rem;
+    -webkit-appearance: none;
+    background-color: var(--background-gray);
+    border-radius: 0.5rem;
+  }
+  
+  .slide::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    -webkit-appearance: none;
+    color: var(--hot-pink);
+    
+  }
+  
+  .slide::-webkit-slider-thumb {
+    width: 1rem;
+    -webkit-appearance: none;
+    height: 1rem;
+    cursor: ew-resize;
+    background: var(--black);
+    box-shadow: -5rem 0 0 5rem var(--hot-pink);
+    border:1px solid var(--black);
+    position: relative;
+    top:-0.25rem;
+  }
