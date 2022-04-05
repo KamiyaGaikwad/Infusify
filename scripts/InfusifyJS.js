@@ -21,6 +21,10 @@ const modalBtn = document.querySelector(".modal-btn");
 const modalbackground = document.querySelector(".modal-background");
 const modalCloseIcon = document.querySelector(".modal-close-icon")
 
+//Navigation hamburger
+const hamIcon = document.querySelector(".ham-icon");
+const navOut = document.querySelector(".nav-out");
+
 //alert close function
 close.addEventListener("click", ()=> {
     alertClose.style.display = "none";
@@ -86,3 +90,14 @@ window.onclick = function(e) {
       modalbackground.style.display = "none";
     }
   }
+
+  //Navigation Hamburger
+  function hamClick(){
+    if(navOut.style.display === "none"){
+        navOut.style.display = "flex"
+    }
+    else{
+        navOut.style.display = "none"
+}}
+
+hamIcon.addEventListener("click",hamClick);
