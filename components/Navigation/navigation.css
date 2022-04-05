@@ -18,6 +18,7 @@
     --shadow-black:rgba(0,0,0,0.2);
     --font-family:'Roboto', sans-serif;
     --hot-pink:#991869;
+    --pink-hover:#f48fb1;
     --brand-font:'Julius Sans One', sans-serif;
 }
 
@@ -117,6 +118,164 @@ input::placeholder{
 .nav .logo{
     height: 50px;
 }
+
+
+.nav-out .btn{
+    height:min-content;
+    width:min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    color:var(--white);
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+.nav-out .btn-link{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.nav-out .page-link{
+    color:var(--card-icon-black);
+    font-weight: 800;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.nav-out .link-list{
+    padding:0.5rem;
+    list-style: none;
+}
+
+.nav-out .nav-list{
+    padding:0.2em 0.8em 1.2em 0.8em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-out .nav-list:hover:not(.active-tab){
+    background-color: var(--background-gray);
+}
+
+.nav-out{
+    grid-area: aside;
+    background-color: var(--container-border-white);
+    height:100vh;
+    width:21%;
+    position: sticky;
+    top:0px;
+    bottom:100px;
+    overflow-y: auto;
+    font-family: var(--brand-font);
+    display: flex;
+    flex-direction: column;
+    }
+
+.nav-out .btn-link{
+    background-color: transparent;
+    font-size:1.2rem;
+    color:var(--hot-pink);
+    padding:0;
+    padding-top: 0.4rem;
+    margin-left:3rem;
+}
+
+.nav-container{
+    width:12rem;
+    height:16rem;
+    background-color: transparent;
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.3rem;
+    font-family: var(--font-family);
+    position: relative;
+}
+
+.nav-container .nav-out{
+   height:16rem;
+   width:10rem;
+   
+}
+
+.ham-icon{
+    width:2rem;
+    height:2rem;
+    background-color: var(--background-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-7rem;
+}
+
+.sub-nav{
+    display: flex;
+}
+
+.sub-nav-btn{
+    display: flex;
+    gap:0.3rem;
+    color: var(--white);
+    text-decoration: none;
+    height:min-content;
+    width:min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.subnav-content{
+  display: none;
+  position: absolute;
+  top: 50px;
+  left:0;
+  background-color: var(--light-pink);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content .pink-navbtn {
+    float: right;
+    color: var(--hot-pink);
+    text-decoration: none;
+    height:min-content;
+    width:min-content;
+    padding: 0.8rem;
+    border:none;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .subnav-content .pink-navbtn:hover {
+    background-color: var(--pink-hover);
+  }
+  
+  .sub-nav:hover .subnav-content {
+    display: block;
+  }
+
+  .sub-nav:hover .sub-nav-btn {
+    background-color: var(--light-pink);
+    color:var(--hot-pink);
+    font-weight: bold;
+  }
+
+  .sub-container{
+      position: relative;
+  }
 
 @media only screen and (max-width: 600px) {
     .nav .input-group input{
